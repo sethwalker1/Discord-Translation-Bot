@@ -1,4 +1,4 @@
-# Discord Bot Template
+# Discord Bot Framework
 
 A scalable Discord bot framework: easily expandable with modular components.
 This is a barebones template. If you want to see something more fleshed out,

@@ -1,9 +1,19 @@
-# Discord Bot Framework
+# Translation Discord Bot: Your Go-To Multilingual Assistant
 
-A scalable Discord bot framework: easily expandable with modular components.
-This is a barebones template. If you want to see something more fleshed out,
-check out
-[this translation bot fork](https://github.com/sethwalker1/Translation-Discord-Bot).
+This is an (unofficial) fork of
+[Discord Bot Framework](https://github.com/sethwalker1/Discord-Bot-Framework),
+also developed by me.
+
+**Tired of subpar translation bots on Discord? Look no further!**
+
+Translation bots are a dime a dozen, but finding a good one? That's where
+thechallenge lies. Most have high subscription costs associated with due to
+implementing advanced Deep Learning models. One solution is to host it yourself,
+using your own API token(s) for a free and accessible translation solution.
+
+I made this in about two days because some of my friends couldn't find a single
+free translation bot worth using. This bot aims to be just that. It's fast,
+reliable, and easy to use.
 
 ## Getting Started
 
@@ -31,36 +41,35 @@ check out
 
 ## Features
 
-### Commands
+### Automatic Translation
 
-Commands are defined in the `src/commands` directory. Each command is a class
-that inherits from the `Command` class. The `Command` class provides a simple
-interface for defining commands and subcommands.
+The bot will automatically translate any message not matching the configured
+language in the `.env` file.
 
-### Subcommands
+### Manual Translation
 
-To create a subcommand, you need to follow a few steps.
+React with a country's flag emoji to translate a message manually. Flag codes
+and languages are in `src/modules/Emoji/`.
 
-1. Create a folder matching the base command's name in
-   `src/commands/subcommands` and create a new `.mjs` file matching the
-   subcommand's name.
-2. Inside your new subcommand file, export an object with:
-   - `data`: An arrow method that is passed as an argument to the
-     `addSubcommand` method.
-   - `execute`: An async class method that is called when the subcommand is
-   executed.
+### Customization
 
-> 💡 The `execute` method in the `Command` class supports loading subcommands by default. You're need to implement the logic yourself if your command overrides the `execute` method.
+Configure up to three translation APIs in the `.env` file, supporting over 130
+languages and allowing for 2.5 million characters monthly.
 
-### Events
+#### Detect Language
 
-Events are defined in the `src/events` directory. Each event is an object, not a
-class. The `execute` method is called when the event is triggered.
+[This API](https://detectlanguage.com/) is optional but recommended. It
+identifies message languages, saving translation characters when the source
+language matches the default. Offers 1000 free daily **requests**, with no
+character limit!
 
-The `messageCreate` event can dynamically load message handler modules. To
-create a message handler:
+#### DeepL
 
-1. Create a new `.mjs` file in the `src/events/messageHandlers` directory
-2. Inside your new message handler file, export a method with your custom logic.
-3. Your method needs to filter each message and return `null` when the message
-   doesn't match your criteria, as it will be executed for every message.
+[DeepL](https://www.deepl.com/) provides high-quality translations using Deep
+Learning. Free for up to 500,000 characters monthly across 29 languages.
+
+#### Microsoft Translator
+
+[Microsoft Translator](https://microsoft.com/en-us/translator/) offers 2 million
+free characters monthly for personal use, supporting 120+ languages. Requires
+more setup effort but maximizes your free character allowance.

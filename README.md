@@ -49,7 +49,8 @@ To create a subcommand, you need to follow a few steps.
      `addSubcommand` method.
    - `execute`: An async class method that is called when the subcommand is
    executed.
-   <aside>💡 The `execute` method in the `Command` class supports loading subcommands by default. You're need to implement the logic yourself if your command overrides the `execute` method. </aside>
+
+> 💡 The `execute` method in the `Command` class supports loading subcommands by default. You're need to implement the logic yourself if your command overrides the `execute` method.
 
 ### Events
 

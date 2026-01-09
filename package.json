@@ -21,7 +21,7 @@
     "detectlanguage": "^2.1.0",
     "discord.js": "^14.9.0",
     "dotenv": "^16.3.1",
-    "dotenv-vault": "^1.25.0",
+    "dotenv-vault": "^1.27.0",
     "uuid": "^13.0.0"
   },
   "devDependencies": {

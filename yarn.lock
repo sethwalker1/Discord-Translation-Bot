@@ -318,7 +318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/plugin-help@npm:^5.2.11":
+"@oclif/plugin-help@npm:^5.2.15":
   version: 5.2.20
   resolution: "@oclif/plugin-help@npm:5.2.20"
   dependencies:
@@ -327,7 +327,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/plugin-not-found@npm:^2.3.24":
+"@oclif/plugin-not-found@npm:^2.3.34":
   version: 2.4.3
   resolution: "@oclif/plugin-not-found@npm:2.4.3"
   dependencies:
@@ -358,7 +358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/plugin-warn-if-update-available@npm:^2.0.40":
+"@oclif/plugin-warn-if-update-available@npm:^2.0.46":
   version: 2.1.1
   resolution: "@oclif/plugin-warn-if-update-available@npm:2.1.1"
   dependencies:
@@ -1336,13 +1336,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.27.2":
-  version: 0.27.2
-  resolution: "axios@npm:0.27.2"
+"axios@npm:^1.6.7":
+  version: 1.13.2
+  resolution: "axios@npm:1.13.2"
   dependencies:
-    follow-redirects: "npm:^1.14.9"
-    form-data: "npm:^4.0.0"
-  checksum: 2efaf18dd0805f7bc772882bc86f004abd92d51007b54c5081f74db0d08ce3593e2c010261896d25a14318eeaa2e966fd825e34f810e8a3339dc64b9d177cf70
+    follow-redirects: "npm:^1.15.6"
+    form-data: "npm:^4.0.4"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: ae4e06dcd18289f2fd18179256d550d27f9a53ecb2f9c59f2ccc4efd1d7151839ba8c3e0fb533dac793e4a59a576ca8689a19244dce5c396680837674a47a867
   languageName: node
   linkType: hard
 
@@ -1807,7 +1808,7 @@ __metadata:
     detectlanguage: "npm:^2.1.0"
     discord.js: "npm:^14.9.0"
     dotenv: "npm:^16.3.1"
-    dotenv-vault: "npm:^1.25.0"
+    dotenv-vault: "npm:^1.27.0"
     nodemon: "npm:^2.0.22"
     uuid: "npm:^13.0.0"
   languageName: unknown
@@ -1835,21 +1836,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv-vault@npm:^1.25.0":
-  version: 1.25.0
-  resolution: "dotenv-vault@npm:1.25.0"
+"dotenv-vault@npm:^1.27.0":
+  version: 1.27.0
+  resolution: "dotenv-vault@npm:1.27.0"
   dependencies:
     "@oclif/core": "npm:^1"
-    "@oclif/plugin-help": "npm:^5.2.11"
-    "@oclif/plugin-not-found": "npm:^2.3.24"
+    "@oclif/plugin-help": "npm:^5.2.15"
+    "@oclif/plugin-not-found": "npm:^2.3.34"
     "@oclif/plugin-update": "npm:^3.1.16"
-    "@oclif/plugin-warn-if-update-available": "npm:^2.0.40"
-    axios: "npm:^0.27.2"
+    "@oclif/plugin-warn-if-update-available": "npm:^2.0.46"
+    axios: "npm:^1.6.7"
     chalk: "npm:^4.1.2"
     dotenv: "npm:^16.3.1"
   bin:
     dotenv-vault: bin/run
-  checksum: 6e4ffad222ef3669c636241f8acc3cbca4620c088aabf3539a019fb3d920568188826b319bcf66aee185ea7739e5e7ec3dca251e4098002fd9d2f3cbcc7d9c31
+  checksum: bcbcbaebfb6b72c1e9de56beab54415e2ef25eb3bc8bdae9e04ccad209a34eb074fc33e76d8aa7cfdc960891a52299d13ee8dd2b2bb6e38dfa6b492a4bbac543
   languageName: node
   linkType: hard
 
@@ -2100,13 +2101,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.14.9, follow-redirects@npm:^1.15.0":
+"follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.15.0":
   version: 1.15.9
   resolution: "follow-redirects@npm:1.15.9"
   peerDependenciesMeta:
     debug:
       optional: true
   checksum: e3ab42d1097e90d28b913903841e6779eb969b62a64706a3eb983e894a5db000fbd89296f45f08885a0e54cd558ef62e81be1165da9be25a6c44920da10f424c
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.15.6":
+  version: 1.15.11
+  resolution: "follow-redirects@npm:1.15.11"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 07372fd74b98c78cf4d417d68d41fdaa0be4dcacafffb9e67b1e3cf090bc4771515e65020651528faab238f10f9b9c0d9707d6c1574a6c0387c5de1042cde9ba
   languageName: node
   linkType: hard
 
@@ -2141,6 +2152,19 @@ __metadata:
     combined-stream: "npm:^1.0.8"
     mime-types: "npm:^2.1.12"
   checksum: 7264aa760a8cf09482816d8300f1b6e2423de1b02bba612a136857413fdc96d7178298ced106817655facc6b89036c6e12ae31c9eb5bdc16aabf502ae8a5d805
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^4.0.4":
+  version: 4.0.5
+  resolution: "form-data@npm:4.0.5"
+  dependencies:
+    asynckit: "npm:^0.4.0"
+    combined-stream: "npm:^1.0.8"
+    es-set-tostringtag: "npm:^2.1.0"
+    hasown: "npm:^2.0.2"
+    mime-types: "npm:^2.1.12"
+  checksum: 52ecd6e927c8c4e215e68a7ad5e0f7c1031397439672fd9741654b4a94722c4182e74cc815b225dcb5be3f4180f36428f67c6dd39eaa98af0dcfdd26c00c19cd
   languageName: node
   linkType: hard
 

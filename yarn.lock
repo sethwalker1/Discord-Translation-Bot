@@ -1320,15 +1320,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.21.1":
-  version: 0.21.4
-  resolution: "axios@npm:0.21.4"
-  dependencies:
-    follow-redirects: "npm:^1.14.0"
-  checksum: da644592cb6f8f9f8c64fdabd7e1396d6769d7a4c1ea5f8ae8beb5c2eb90a823e3a574352b0b934ac62edc762c0f52647753dc54f7d07279127a7e5c4cd20272
-  languageName: node
-  linkType: hard
-
 "axios@npm:^1.6.7":
   version: 1.13.2
   resolution: "axios@npm:1.13.2"
@@ -1749,12 +1740,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detectlanguage@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "detectlanguage@npm:2.1.0"
-  dependencies:
-    axios: "npm:^0.21.1"
-  checksum: 3a4fc000d45b5b66ed53274f120af4732a72879a1ce7a438ddcdfe76e50efe5272a8a92785268ba742f23e1f6d597e03b1fbcbea60dac4d8c9e9fdd5e6ecdff7
+"detectlanguage@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "detectlanguage@npm:3.0.0"
+  checksum: 81ed64a14cb79c3efcaef06bef2eb492eb97749e58eb826f2af325991589612b67c8e91782f14e2627bc5dd7ef9c417a0dbce6a693c2e3029a2873744481f6b4
   languageName: node
   linkType: hard
 
@@ -1789,7 +1778,7 @@ __metadata:
     "@sentry/profiling-node": "npm:^1.2.6"
     cross-env: "npm:^10.1.0"
     deepl-node: "npm:^1.11.0"
-    detectlanguage: "npm:^2.1.0"
+    detectlanguage: "npm:^3.0.0"
     discord.js: "npm:^14.25.1"
     dotenv: "npm:^16.3.1"
     dotenv-vault: "npm:^1.27.0"
@@ -2084,7 +2073,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.15.0":
+"follow-redirects@npm:^1.15.0":
   version: 1.15.9
   resolution: "follow-redirects@npm:1.15.9"
   peerDependenciesMeta:

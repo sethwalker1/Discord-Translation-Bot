@@ -17,7 +17,7 @@ export default class Translate {
 
   static async anyLimitReached() {
     const detectLanguage = new DetectLanguage(
-      process.env.DETECT_LANGUAGE_TOKEN
+      process.env.DETECT_LANGUAGE_TOKEN,
     );
 
     const {
@@ -25,7 +25,7 @@ export default class Translate {
       bytes,
       daily_requests_limit: dailyRequestsLimit,
       daily_bytes_limit: dailyBytesLimit,
-    } = await detectLanguage.userStatus();
+    } = await detectLanguage.accountStatus();
 
     return requests >= dailyRequestsLimit || bytes >= dailyBytesLimit;
   }
@@ -35,7 +35,7 @@ export default class Translate {
     if (await this.anyLimitReached()) return null;
 
     const detectLanguage = new DetectLanguage(
-      process.env.DETECT_LANGUAGE_TOKEN
+      process.env.DETECT_LANGUAGE_TOKEN,
     );
 
     return (await detectLanguage.detect(text))
@@ -58,7 +58,7 @@ export default class Translate {
       if (detectedSourceLanguage != 'en')
         ({ text: inputText, detectedSourceLanguage } = await this.translate(
           inputText,
-          'en'
+          'en',
         ));
 
       // Translate to Pirate
@@ -91,7 +91,10 @@ export default class Translate {
     if (!result.text || normalize(result.text) === normalize(inputText))
       return null;
 
-    if (detectedSourceLanguage !== result.detectedSourceLanguage)
+    if (
+      process.env.NODE_ENV !== 'production' &&
+      detectedSourceLanguage !== result.detectedSourceLanguage
+    )
       console.log(detectedSourceLanguage, result.detectedSourceLanguage);
 
     // Detected source language by the translation engine

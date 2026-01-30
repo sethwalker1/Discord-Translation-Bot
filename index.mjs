@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import * as Sentry from '@sentry/node';
-import { ProfilingIntegration } from '@sentry/profiling-node';
+import { nodeProfilingIntegration } from '@sentry/profiling-node';
 import Client from './src/Client.mjs';
 import Translate from './src/modules/Translate/Translate.mjs';
 
@@ -15,10 +15,11 @@ dotenv.config({
   path: fs.existsSync(productionEnvPath)
     ? productionEnvPath
     : path.join(process.cwd(), '.env'),
+  quiet: true,
 });
 
 // Override .env file with .development.env file if in development mode
-if (process.env.NODE_ENV !== 'production') dotenv.config({ override: true });
+if (process.env.NODE_ENV !== 'production') dotenv.config({ override: true, quiet: true });
 
 // Override console.log to include a timestamp
 console.log = console.info = (
@@ -41,7 +42,7 @@ async function init() {
     Sentry.init({
       dsn: process.env.SENTRY_DSN,
       environment: process.env.NODE_ENV,
-      integrations: [new ProfilingIntegration()],
+      integrations: [nodeProfilingIntegration()],
       includeLocalVariables: true,
       // Performance Monitoring
       tracesSampleRate: 1.0,

@@ -1,4 +1,4 @@
-import { Events } from 'discord.js';
+import { Events, MessageFlags } from 'discord.js';
 import Logging from '../modules/Logging.mjs';
 
 export default {
@@ -29,7 +29,7 @@ export default {
         // Build a generic error message for the user
         const content = {
           content: `Oops, I've ran into an unknown error! Please try again later.`,
-          ephemeral: true,
+          flags: MessageFlags.Ephemeral,
         };
 
         // Send the generic error message to the user

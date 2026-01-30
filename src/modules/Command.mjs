@@ -1,4 +1,5 @@
 import path from 'path';
+import { MessageFlags } from 'discord.js';
 
 export default class Command {
   extname = path.extname(import.meta.url);
@@ -10,7 +11,7 @@ export default class Command {
 
   async execute(interaction) {
     // Defer the reply to let the user know the bot is working
-    await interaction.deferReply({ ephemeral: true });
+    await interaction.deferReply({ flags: MessageFlags.Ephemeral });
 
     // Build a path to the target subcommand module
     const file = interaction.options.getSubcommand() + this.extname;
@@ -24,7 +25,6 @@ export default class Command {
     // Reply with the subcommand's result
     await interaction.editReply({
       content,
-      ephemeral: true,
     });
 
     // Return the result for logging

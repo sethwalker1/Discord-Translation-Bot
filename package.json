@@ -14,7 +14,7 @@
     "start": "cross-env NODE_ENV=production node ."
   },
   "dependencies": {
-    "@sentry/node": "^10.36.0",
+    "@sentry/node": "^10.38.0",
     "@sentry/profiling-node": "^10.36.0",
     "cross-env": "^10.1.0",
     "deepl-node": "^1.11.0",

@@ -14,8 +14,8 @@
     "start": "cross-env NODE_ENV=production node ."
   },
   "dependencies": {
-    "@sentry/node": "^10.38.0",
-    "@sentry/profiling-node": "^10.38.0",
+    "@sentry/node": "^10.39.0",
+    "@sentry/profiling-node": "^10.39.0",
     "cross-env": "^10.1.0",
     "deepl-node": "^1.24.0",
     "detectlanguage": "^3.0.0",
@@ -25,6 +25,6 @@
     "uuid": "^13.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.1.13"
   }
 }

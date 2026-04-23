@@ -21,7 +21,7 @@
     "deepl-node": "^1.26.0",
     "detectlanguage": "^3.0.0",
     "discord.js": "^14.26.2",
-    "uuid": "^13.0.0"
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"

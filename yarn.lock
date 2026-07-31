@@ -125,23 +125,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dotenvx/dotenvx@npm:^2.17.4":
-  version: 2.17.4
-  resolution: "@dotenvx/dotenvx@npm:2.17.4"
+"@dotenvx/dotenvx@npm:^2.19.0":
+  version: 2.19.0
+  resolution: "@dotenvx/dotenvx@npm:2.19.0"
   dependencies:
-    "@dotenvx/primitives": "npm:^2.1.0"
+    "@dotenvx/primitives": "npm:^2.1.1"
     "@dotenvx/tooling": "npm:^1.0.3"
     yocto-spinner: "npm:^1.2.1"
   bin:
     dotenvx: src/cli/dotenvx.js
-  checksum: 13101247575b51ca492b9674d6369faae1990dcab586d5a640e671315ed0114cf8ec923528902d2ac38b3713105a378b6f8dce9814376780a79b6f971cc93d69
+  checksum: ea6005ead5f13c4ae823cf56114f48993cc075e07673072c4410e928aaebdd7a9da31a26e27e5b4cfbae061d09878c05a8d3c86223b2f50aecfb7caa64890e42
   languageName: node
   linkType: hard
 
-"@dotenvx/primitives@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@dotenvx/primitives@npm:2.1.0"
-  checksum: 6d843a25231491ad1d6f8fc866920ac8db7b07d40524d7da3d2ac34246c437989ca094f1f7628472b527f69d01a18c50271dc27acd1f9e6e94d90e24cb20bfc1
+"@dotenvx/primitives@npm:^2.1.1":
+  version: 2.1.2
+  resolution: "@dotenvx/primitives@npm:2.1.2"
+  checksum: 34627cf9e2406c1e514fde9e01eff08ddef6079307390266a90675386cf06df4ae0b16a8824e5627fd01e6031d7465ddd1a6cc50d0dfe6ba378ea726a1d5f3f7
   languageName: node
   linkType: hard
 
@@ -449,11 +449,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>=12.0":
-  version: 26.1.1
-  resolution: "@types/node@npm:26.1.1"
+  version: 26.1.2
+  resolution: "@types/node@npm:26.1.2"
   dependencies:
     undici-types: "npm:~8.3.0"
-  checksum: df6555a94c6b4cf74e6238373e2881e72dc91058cf2ba173be77ea3974aaa8f459c2f10fbb7eb644fb1e5189dd8407097f5d39506fad39c89bde18acb3b90316
+  checksum: 2dd6d75b80c006deab4e381acc8cb2e3d634f10141f05fd6cadaabddd80a95f04aef7b00a574bd8fd5e08e940b899c23b91dd09a70b11a34a2762203b5eea25e
   languageName: node
   linkType: hard
 
@@ -793,9 +793,9 @@ __metadata:
   linkType: hard
 
 "discord-api-types@npm:^0.38.1, discord-api-types@npm:^0.38.33, discord-api-types@npm:^0.38.40, discord-api-types@npm:^0.38.49, discord-api-types@npm:^0.38.50":
-  version: 0.38.50
-  resolution: "discord-api-types@npm:0.38.50"
-  checksum: ff4603da1242138b46a75358eb5268d3869dbfc6547df2e6dd1726a65db358e8f5974dee9cc48bfa38003ab1f269a8c3e9117b310f2d1b5b146365dea6a618c9
+  version: 0.38.52
+  resolution: "discord-api-types@npm:0.38.52"
+  checksum: 0e02d41c90ce99f2bf4227ca4931707ba08a965e714b1d9e7e16f7985bf9b8942a49d989d5ab2e7691470457578e606af95070c671f5de4e43bca789c56b6529
   languageName: node
   linkType: hard
 
@@ -803,7 +803,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "discord-bot-template@workspace:."
   dependencies:
-    "@dotenvx/dotenvx": "npm:^2.17.4"
+    "@dotenvx/dotenvx": "npm:^2.19.0"
     "@sentry/node": "npm:^10.68.0"
     "@sentry/profiling-node": "npm:^10.68.0"
     cross-env: "npm:^10.1.0"
@@ -1241,9 +1241,9 @@ __metadata:
   linkType: hard
 
 "ip-address@npm:^10.1.1":
-  version: 10.2.0
-  resolution: "ip-address@npm:10.2.0"
-  checksum: 12fec399e1af5753ac322e47a6d81a50d3a528b3abb17c09525b2a2edcaedcca628c40520706f7037bc4d8e951b0296c47e7b86d0a8e6e2335c8f0ba4afcfac1
+  version: 10.4.0
+  resolution: "ip-address@npm:10.4.0"
+  checksum: 8a286dd112a88c372b10c706caca14dcf5ed029a11c3911062ad8937ca0f951aa513ecacf82e15ffcf6343749ae6c079dd9741282fc94033a06ff1b7bd6ce69a
   languageName: node
   linkType: hard
 
@@ -1349,9 +1349,9 @@ __metadata:
   linkType: hard
 
 "magic-bytes.js@npm:^1.13.0":
-  version: 1.13.0
-  resolution: "magic-bytes.js@npm:1.13.0"
-  checksum: d73612258d7edcd5af6f4ee93b89945b4c50e1882b8b37a894e58b8bd6cb2fc82219a8e5107a5be5f9c6448822ef270ab5b536fa3d785a72aa49eb4c9b3491cb
+  version: 1.13.1
+  resolution: "magic-bytes.js@npm:1.13.1"
+  checksum: 8420c928e4d922e6317e45ae15b366a2dbf1e17878d343211dd0f6292c8093af6a1a6ba3745062297b5a0f4fe99b6e966d2afac369ff5558c3d11f9097928e63
   languageName: node
   linkType: hard
 
@@ -2039,8 +2039,8 @@ __metadata:
   linkType: hard
 
 "yoctocolors@npm:^2.1.1":
-  version: 2.1.2
-  resolution: "yoctocolors@npm:2.1.2"
-  checksum: 6ee42d665a4cc161c7de3f015b2a65d6c65d2808bfe3b99e228bd2b1b784ef1e54d1907415c025fc12b400f26f372bfc1b71966c6c738d998325ca422eb39363
+  version: 2.2.0
+  resolution: "yoctocolors@npm:2.2.0"
+  checksum: 8b2761daad30ca3b5b717fc12d9a30aea23f8d757d355b29b6b53c3a570de236fd85b17040c5196b18573fe38a4a981f48f111efa9a29c743e0878e26137b2b1
   languageName: node
   linkType: hard

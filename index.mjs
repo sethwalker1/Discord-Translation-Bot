@@ -1,7 +1,7 @@
 /**
  * Imports
  */
-import dotenv from '@dotenvx/dotenvx';
+import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import * as Sentry from '@sentry/node';
